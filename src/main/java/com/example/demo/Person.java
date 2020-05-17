@@ -3,7 +3,10 @@ package com.example.demo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
+// jaxb에서 사용하는 xml이 있는데, 이 jaxb가 사용할 rootElement를 알려주어야 한다.
+@XmlRootElement
 @Entity
 public class Person {
 
